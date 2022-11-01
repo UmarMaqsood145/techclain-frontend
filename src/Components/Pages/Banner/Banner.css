@@ -1,7 +1,8 @@
 #banner {
-  width: 95%;
+  width: 96%;
   height: 250px;
-  background-color: var(--bg-primary);
+  background-color: #8187f5;
+  /* background-color: gold; */
   margin: auto;
   border-radius: 10px;
   margin-top: 30px;
@@ -9,7 +10,7 @@
 #banner .bannerColor {
   width: 100%;
   height: 250px;
-  background-color: rgba(0, 0, 0, 0.418);
+  /* background-color: rgba(0, 0, 0, 0.418); */
   border-radius: 10px;
   padding: 40px 80px;
   display: flex;
@@ -17,11 +18,13 @@
   align-items: center;
 }
 #banner .bannerColor h1 {
-  color: white;
+  /* color: white; */
+  color: black;
   font-weight: bold;
 }
 #banner .bannerColor p {
-  color: white;
+  /* color: white; */
+  color: black;
   margin-bottom: 0%;
 }
 #banner .bannerColor a {
