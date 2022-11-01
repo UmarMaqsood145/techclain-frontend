@@ -1,25 +1,11 @@
 import React from "react";
 import "./Home.css";
+import MainComp from "./MainComp/MainComp";
 
 function Home() {
   return (
     <div id="home">
-      <div class="area">
-        <ul class="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      <MainComp />
     </div>
   );
 }
