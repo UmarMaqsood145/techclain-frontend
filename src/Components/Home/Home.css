@@ -1,3 +1,7 @@
+#home {
+  position: relative;
+}
+
 #home .context {
   width: 100%;
   position: absolute;
