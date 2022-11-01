@@ -1,7 +1,27 @@
 import React from "react";
+import "./Home.css";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div id="home">
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 export default Home;
