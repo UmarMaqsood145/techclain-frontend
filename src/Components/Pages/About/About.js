@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css";
 import image1 from "../../assets/image1.jpg";
 import image2 from "../../assets/image2.jpg";
-import axios from "axios";
 import { Helmet } from "react-helmet";
 function About() {
   return (
