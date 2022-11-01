@@ -1,0 +1,94 @@
+#homeContact {
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  z-index: 1234;
+}
+#homeContact h2 {
+  font-weight: bold;
+  color: white;
+  padding: 10px 10px 10px 0px;
+}
+#homeContact p {
+  color: white;
+  margin-bottom: 0%;
+}
+#homeContact .contactDetail {
+  width: 60%;
+  height: auto;
+  padding: 20px 0px;
+  /* background-color: palevioletred; */
+}
+#homeContact .contactDetail input {
+  width: 100%;
+  outline: none;
+  padding: 7px 5px;
+  margin: 3px 0px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+}
+#homeContact .contactDetail input:hover {
+  border-color: var(--bg-yellow);
+}
+#homeContact .contactDetail input:focus {
+  border-color: var(--bg-yellow);
+}
+#homeContact .contactDetail input::placeholder {
+  color: white;
+}
+#homeContact .contactDetail .ccc {
+  padding-left: 60px;
+}
+#homeContact .contactDetail button {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: var(--bg-yellow);
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#homeContact .contactDetail button:hover {
+  transform: translateY(-3px);
+}
+#homeContact .discount {
+  outline: none;
+  border: none;
+  width: 60%;
+  padding: 7px 0px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #5d64df;
+  color: white;
+  transition: 0.3s;
+}
+#homeContact .discount:hover {
+  transform: scale(1.03);
+}
+@media screen and (max-width: 768px) {
+  #homeContact {
+    width: 55%;
+    padding: 20px 20px 20px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #homeContact {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  #homeContact .contactDetail {
+    width: 100%;
+  }
+  #homeContact .discount {
+    width: 100%;
+    background-color: #3d42a7;
+  }
+}
