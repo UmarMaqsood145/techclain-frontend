@@ -1,0 +1,130 @@
+footer {
+  width: 100%;
+  background: #222425;
+  padding: 50px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+footer .f-box {
+  display: flex;
+}
+
+footer .f-box .inner-box {
+  width: 50%;
+  margin-right: 20px;
+}
+footer .footerText {
+  font-size: 15px;
+}
+footer .f-box .inner-box h2 {
+  color: white;
+}
+
+footer .f-box .inner-box li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer .f-box .inner-box li .icon {
+  color: var(--bg-primary);
+  font-size: 20px;
+}
+
+footer .f-box .inner-box li a {
+  text-decoration: none;
+  color: var(--bg-text);
+  margin-left: 10px;
+}
+
+footer .f-box .inner-box li a:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: var(--bg-primary);
+}
+
+footer .f-box .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+footer .social-icons {
+  margin-top: 20px;
+  display: flex;
+}
+
+footer .social-icons a {
+  text-decoration: none;
+}
+
+footer .social-icons .fa {
+  font-size: 35px;
+  background-color: #1c1e22;
+  color: var(--bg-text);
+  margin: 10px 15px 5px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer .social-icons .fa:hover {
+  background: var(--bg-primary);
+  color: white;
+  transform: scale(1.2);
+}
+
+footer .line {
+  background: var(--bg-text);
+  width: 100%;
+  height: 1px;
+  margin-top: 50px;
+}
+
+footer p {
+  color: var(--bg-text);
+}
+
+footer .lastBox {
+  margin-top: 20px;
+}
+
+footer .lastBox p {
+  text-align: center;
+  color: var(--bg-text);
+  margin-bottom: 0;
+}
+
+footer .lastBox p a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .lastBox p a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--bg-primary);
+}
+
+footer .f {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 20px 10px 30px 10px;
+  }
+  footer .f-box {
+    flex-direction: column;
+  }
+
+  footer .f-box .inner-box {
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+}
