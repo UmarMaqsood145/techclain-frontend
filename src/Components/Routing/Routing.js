@@ -7,6 +7,9 @@ import Contact from "../Pages/Contact/Contact";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Banner from "../Pages/Banner/Banner";
 import Footer from "../Footer/Footer";
+import Portfolio from "../Pages/Portfolio/Portfolio";
+import OrderNow from "../Pages/OrderNow/OrderNow";
+import ScrollToTop from "./ScrollToTop";
 
 function Routing() {
   return (
@@ -18,9 +21,12 @@ function Routing() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/order-now" element={<OrderNow />} />
         </Routes>
         <Banner />
         <Footer />
+        <ScrollToTop />
       </Router>
     </>
   );
