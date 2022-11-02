@@ -20,8 +20,8 @@ function AboutSection3() {
               <div class="line-2"></div>
               <div class="line-3"></div>
               <div class="line-4"></div>
-              <h1>{data.mainTitle}</h1>
-              <h2>{data.title}</h2>
+              <h2>{data.mainTitle}</h2>
+              <h4>{data.title}</h4>
               <p>{data.description}</p>
             </div>
           );
