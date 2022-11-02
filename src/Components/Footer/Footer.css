@@ -32,7 +32,7 @@ footer .f-box .inner-box li {
 }
 
 footer .f-box .inner-box li .icon {
-  color: var(--bg-primary);
+  color: white;
   font-size: 20px;
 }
 
@@ -40,12 +40,12 @@ footer .f-box .inner-box li a {
   text-decoration: none;
   color: var(--bg-text);
   margin-left: 10px;
+  transition: 0.3s;
 }
 
 footer .f-box .inner-box li a:hover {
   color: white;
-  text-decoration: underline;
-  text-decoration-color: var(--bg-primary);
+  transform: translateX(5px);
 }
 
 footer .f-box .logo img {
@@ -64,8 +64,8 @@ footer .social-icons a {
 
 footer .social-icons .fa {
   font-size: 35px;
-  background-color: #1c1e22;
-  color: var(--bg-text);
+  background: rgb(209, 0, 29);
+  color: white;
   margin: 10px 15px 5px 0px;
   padding: 10px;
   border-radius: 10px;
@@ -74,7 +74,6 @@ footer .social-icons .fa {
 }
 
 footer .social-icons .fa:hover {
-  background: var(--bg-primary);
   color: white;
   transform: scale(1.2);
 }

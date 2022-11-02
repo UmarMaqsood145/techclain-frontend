@@ -1,7 +1,8 @@
 import React from "react";
 import "./Banner.css";
-import job from "../../assets/logo.ico";
 import Aos from "aos";
+import { NavLink } from "react-router-dom";
+
 function Banner() {
   Aos.init();
   Aos.refresh();
@@ -9,11 +10,11 @@ function Banner() {
     <>
       <div id="banner" data-aos="flip-up" data-aos-duration="2000">
         <div className="bannerColor">
-          <div>
-            <h1>JOBSVIEWERS</h1>
-            <p>BEST JOBS WEBSITE PLATEFORM SEARCH HERE AND GET A PERFECT JOB</p>
-          </div>
-          <img src={job} alt="" />
+          <h1>
+            LET'S TALK ABOUT YOUR NEXT <br />
+            PROJECT!
+          </h1>
+          <NavLink to="/contact">GET STARTED</NavLink>
         </div>
       </div>
     </>

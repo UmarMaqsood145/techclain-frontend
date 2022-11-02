@@ -9,7 +9,7 @@ function HomeContact() {
         <h2>
           Do You Want An Identity that Stays in Your Customer’s Mind Forever?
         </h2>
-        <p>Hire Our Website Designers in Pakistan!</p>
+        <p>Hire Our Web Developers allover the world!</p>
         <div className="contactDetail">
           <input type="text" placeholder="Enter Your Name" />
           <input type="text" placeholder="Enter Your Business Name" />
