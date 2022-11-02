@@ -7,10 +7,8 @@ import { FaUserAlt, FaWarehouse } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { GiTrophyCup } from "react-icons/gi";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
-import Aos from "aos";
+
 function Counter() {
-  Aos.init();
-  Aos.refresh();
   return (
     <>
       <div id="counter-main">
@@ -83,9 +81,7 @@ function Counter() {
             </div>
           </div>
           <div className="btn">
-            <NavLink to="/portfolio" data-aos="fade-up">
-              SEE PORTFOLIO
-            </NavLink>
+            <NavLink to="/portfolio">SEE PORTFOLIO</NavLink>
           </div>
         </div>
       </div>

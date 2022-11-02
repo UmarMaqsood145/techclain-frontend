@@ -1,7 +1,7 @@
 export const packagesDetail = [
   {
     id: 1,
-    title: "Website Basic Package",
+    title: "Website Basic",
     price: "50000",
     p1: "3 Custom Design Concepts",
     p2: "1 Creative Designer",
@@ -12,7 +12,7 @@ export const packagesDetail = [
   },
   {
     id: 1,
-    title: "Website Startup Package",
+    title: "Website Startup ",
     price: "45000",
     p1: "3 Custom Design Concepts",
     p2: "1 Creative Designer",
@@ -23,7 +23,7 @@ export const packagesDetail = [
   },
   {
     id: 1,
-    title: "Website Unlimited Package",
+    title: "Website Unlimited ",
     price: "75000",
     p1: "3 Custom Design Concepts",
     p2: "1 Creative Designer",
@@ -34,7 +34,7 @@ export const packagesDetail = [
   },
   {
     id: 1,
-    title: "Website Unlimited Package",
+    title: "Website Unlimited",
     price: "75000",
     p1: "3 Custom Design Concepts",
     p2: "1 Creative Designer",

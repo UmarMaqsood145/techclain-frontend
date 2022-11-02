@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from "../assets/logo.ico";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { RiWhatsappFill } from "react-icons/ri";
 import { VscMenu } from "react-icons/vsc";
 import { GrClose } from "react-icons/gr";
 
 function Navbar() {
+  const Navigate = useNavigate();
   const [menu, setMenu] = useState(false);
+  const orderNow = () => {
+    Navigate("/order-now");
+    setMenu(false);
+  };
   return (
     <nav id="nav">
       <div className="navBar">
@@ -49,9 +54,9 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/order-now" onClick={() => setMenu(false)}>
+            <button className="orderBtn" onClick={orderNow}>
               Order Now
-            </NavLink>
+            </button>
           </li>
           <div className="navDetails">
             <p>
