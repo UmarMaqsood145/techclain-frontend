@@ -3,43 +3,42 @@ import "./ContactForm.css";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
-import Aos from "aos";
 import { ContactFormSchema } from "./ContactFormSchema";
 import { toast } from "react-toastify";
 import Loading from "../../../../Loading/Loading";
 import axios from "axios";
 import { useFormik } from "formik";
 import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
 const initialValues = {
   name: "",
   email: "",
   message: "",
 };
 function ContactForm() {
-  Aos.init();
-  Aos.refresh();
-
   const [loading, setLoading] = useState(false);
-  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
-    useFormik({
-      initialValues,
-      validationSchema: ContactFormSchema,
-      onSubmit: (values, action) => {
-        setLoading(true);
-        axios
-          .post("", values)
-          .then((res) => {
-            toast.success("Your message has been successfully sent!");
-            setLoading(false);
-            action.resetForm();
-          })
-          .catch((err) => {
-            console.log("Error", err.message);
-            setLoading(false);
-            toast.error("Something wrent wrong, please try again!");
-          });
-      },
-    });
+  const { values, errors, touched, handleChange, handleSubmit } = useFormik({
+    initialValues,
+    validationSchema: ContactFormSchema,
+    onSubmit: (values, action) => {
+      setLoading(true);
+      axios
+        .post("", values)
+        .then((res) => {
+          toast.success("Your message has been successfully sent!");
+          setLoading(false);
+          action.resetForm();
+        })
+        .catch((err) => {
+          console.log("Error", err.message);
+          setLoading(false);
+          toast.error("Something wrent wrong, please try again!");
+        });
+    },
+  });
   return (
     <div id="contactForm">
       <h1>
@@ -47,53 +46,66 @@ function ContactForm() {
       </h1>
       <div className="formContainer">
         <div className="left-box">
-          <form>
-            <div className="inputField">
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                placeholder="Name"
-                name="name"
-                value={values.name}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.name && touched.name ? (
-                <p className="form-error">{errors.name}</p>
-              ) : null}
-            </div>
-            <div className="inputField mt-2">
-              <label htmlFor="email">Email:</label>
-              <input
-                type="text"
-                placeholder="Email"
-                name="email"
-                value={values.email}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.email && touched.email ? (
-                <p className="form-error">{errors.email}</p>
-              ) : null}
-            </div>
-            <div className="inputField mt-2">
-              <label htmlFor="message">Message:</label>
-              <textarea
-                type="text"
-                placeholder="Write Message"
-                name="message"
-                value={values.message}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.message && touched.message ? (
-                <p className="form-error">{errors.message}</p>
-              ) : null}
-            </div>
-            <button onClick={handleSubmit}>
-              {loading ? <Loading /> : <>SEND MESSAGE</>}
-            </button>
-          </form>
+          <Form noValidate onSubmit={handleSubmit}>
+            <Form.Group as={Col} md="12" controlId="validationFormikUsername">
+              <Form.Label>Name:</Form.Label>
+              <InputGroup hasValidation>
+                <Form.Control
+                  type="text"
+                  placeholder="Name"
+                  aria-describedby="inputGroupPrepend"
+                  name="name"
+                  value={values.name}
+                  onChange={handleChange}
+                  isInvalid={!!errors.name}
+                  isValid={touched.name && !errors.name}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.name}
+                </Form.Control.Feedback>
+              </InputGroup>
+            </Form.Group>
+            <Form.Group as={Col} md="12" controlId="validationFormikUsername">
+              <Form.Label>Email:</Form.Label>
+              <InputGroup hasValidation>
+                <Form.Control
+                  type="text"
+                  placeholder="Email"
+                  aria-describedby="inputGroupPrepend"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
+                  isInvalid={!!errors.email}
+                  isValid={touched.email && !errors.email}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.email}
+                </Form.Control.Feedback>
+              </InputGroup>
+            </Form.Group>
+            <Form.Group as={Col} md="12" controlId="validationFormikUsername">
+              <Form.Label>Message:</Form.Label>
+              <InputGroup hasValidation>
+                <Form.Control
+                  type="text"
+                  placeholder="Message"
+                  aria-describedby="inputGroupPrepend"
+                  name="message"
+                  as="textarea"
+                  value={values.message}
+                  onChange={handleChange}
+                  isInvalid={!!errors.message}
+                  isValid={touched.message && !errors.message}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.message}
+                </Form.Control.Feedback>
+              </InputGroup>
+            </Form.Group>
+            <Button type="submit">
+              {loading ? <Loading /> : <>Send Message</>}
+            </Button>
+          </Form>
         </div>
         <div className="right-box">
           <div>

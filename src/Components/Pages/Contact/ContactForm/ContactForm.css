@@ -32,48 +32,43 @@
   border-radius: 5px;
 }
 
-#contactForm .left-box .inputField {
-  display: flex;
-  flex-direction: column;
-}
-
-#contactForm .left-box .inputField label {
+#contactForm .left-box label {
   color: black;
   font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
-#contactForm .left-box .inputField input {
+#contactForm .left-box input {
   width: 100%;
-  background: none;
-  border: 1px solid gray;
   border-radius: 4px;
   outline: none;
   padding: 5px 5px;
+  box-shadow: none;
 }
 
-#contactForm .left-box .inputField input:hover {
+#contactForm .left-box input:hover {
   border: 1px solid var(--bg-primary);
 }
 
-#contactForm .left-box .inputField input:focus {
+#contactForm .left-box input:focus {
   border: 1px solid var(--bg-primary);
 }
 
-#contactForm .left-box .inputField textarea {
+#contactForm .left-box textarea {
   width: 100%;
   height: 100px;
-  background: none;
-  border: 1px solid gray;
   border-radius: 4px;
   outline: none;
   padding: 5px 5px;
+  box-shadow: none;
 }
 
-#contactForm .left-box .inputField textarea:hover {
+#contactForm .left-box textarea:hover {
   border: 1px solid var(--bg-primary);
 }
 
-#contactForm .left-box .inputField textarea:focus {
+#contactForm .left-box textarea:focus {
   border: 1px solid var(--bg-primary);
 }
 
@@ -90,6 +85,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+
+#contactForm .left-box button:hover {
+  background: var(--bg-yellow);
+  color: black;
 }
 
 #contactForm .form-error {
@@ -97,10 +98,6 @@
   color: red;
   margin-bottom: 0;
   margin-top: 2px;
-}
-
-#contactForm .left-box button:hover {
-  box-shadow: 0px 0px 10px var(--bg-primary);
 }
 
 #contactForm .formContainer .right-box {

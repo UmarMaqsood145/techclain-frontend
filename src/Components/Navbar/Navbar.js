@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from "../assets/logo.ico";
 import { NavLink, Link } from "react-router-dom";
-import { BsChatDotsFill } from "react-icons/bs";
+import { RiWhatsappFill } from "react-icons/ri";
 import { VscMenu } from "react-icons/vsc";
 import { GrClose } from "react-icons/gr";
 
@@ -48,6 +48,11 @@ function Navbar() {
               Contact Us
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/order-now" onClick={() => setMenu(false)}>
+              Order Now
+            </NavLink>
+          </li>
           <div className="navDetails">
             <p>
               You can find any type of job on jobsviewers without any problem
@@ -79,7 +84,7 @@ function Navbar() {
           rel="noreferrer"
           className="contactBtn"
         >
-          <BsChatDotsFill className="icon" />
+          <RiWhatsappFill className="icon" />
           <div className="ms-2">
             <span>CONNECT WITH US</span>
             <p>+923001234567</p>

@@ -1,0 +1,141 @@
+#orderNow {
+  width: 100%;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#orderNow h1 {
+  font-weight: bold;
+}
+
+#orderNow h1 span {
+  color: var(--bg-primary);
+}
+
+#orderNow .inputsBox {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#orderNow .inputsBox .inputField {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#orderNow .inputsBox .inputField .same {
+  margin: 5px 10px;
+}
+
+.cc {
+  padding: 15px 50px !important;
+}
+
+#orderNow .inputsBox .inputField input {
+  box-shadow: none;
+  width: 480px;
+  color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField input:hover {
+  border-color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField input:focus {
+  border-color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField select {
+  box-shadow: none;
+  width: 480px;
+  color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField select:hover {
+  border-color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField select:focus {
+  border-color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField textarea {
+  box-shadow: none;
+  height: 100px;
+  width: 980px;
+  color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField textarea:hover {
+  border-color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .inputField textarea:focus {
+  border-color: var(--bg-primary);
+}
+
+#orderNow .inputsBox .submitBtn {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background: var(--bg-primary);
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#orderNow .inputsBox .submitBtn:hover {
+  background: var(--bg-yellow);
+  color: black;
+}
+
+@media screen and (max-width: 1330px) {
+  #orderNow .inputsBox {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  #orderNow .inputsBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #orderNow .inputsBox .inputField textarea {
+    box-shadow: none;
+    height: 100px;
+    width: 480px;
+  }
+
+  #orderNow .inputsBox .submitBtn {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #orderNow {
+    padding: 30px 10px;
+  }
+
+  #orderNow .inputsBox .inputField input {
+    width: 310px;
+  }
+
+  #orderNow .inputsBox .inputField select {
+    width: 310px;
+  }
+
+  #orderNow .inputsBox .inputField textarea {
+    width: 310px;
+  }
+}
