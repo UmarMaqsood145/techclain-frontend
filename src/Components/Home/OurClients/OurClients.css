@@ -1,0 +1,75 @@
+#ourClients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#ourClients h1 {
+  color: black;
+  font-weight: bolder;
+}
+
+#ourClients h1 span {
+  color: var(--bg-primary);
+}
+
+#ourClients .testi {
+  width: 100%;
+  margin-top: 15px;
+}
+
+#ourClients .testi p {
+  color: black;
+}
+
+#ourClients .testi .swiper-slide {
+  border-radius: 7px;
+  padding: 30px 0px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--bg-primary);
+}
+
+#ourClients .testi .swiper-slide:hover {
+  background: var(--bg-primary);
+}
+
+#ourClients .testi .swiper-slide:hover h5 {
+  color: white;
+}
+
+#ourClients .testi .swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+#ourClients .testi .swiper-pagination-fraction {
+  bottom: -20px;
+}
+
+#ourClients .testi .client-det {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ourClients .testi .client-det img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#ourClients .testi .client-det h5 {
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  #ourClients {
+    padding: 10px 10px 10px 10px;
+  }
+}
