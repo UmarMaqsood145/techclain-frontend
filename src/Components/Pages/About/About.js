@@ -2,7 +2,9 @@ import React from "react";
 import "./About.css";
 import image1 from "../../assets/image1.jpg";
 import image2 from "../../assets/image2.jpg";
+import Counter from "../Counter/Counter";
 import { Helmet } from "react-helmet";
+import TeamMember from "../TeamMember/TeamMember";
 function About() {
   return (
     <>
@@ -25,7 +27,7 @@ function About() {
             <img src={image1} alt="" />
           </div>
           <div className="box">
-            <h1>About Job Viewers</h1>
+            <h2>About Job Viewers</h2>
             <p>
               On this platform you can find the job of your choice, here you
               have to post your profile with your original information.You
@@ -44,23 +46,13 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="section2">
-          <div className="cards">
-            <h1>1000+</h1>
-            <p>Total Jobs Posted</p>
-          </div>
-          <div className="cards">
-            <h1>1000+</h1>
-            <p>Total Job Seekers</p>
-          </div>
-          <div className="cards">
-            <h1>1000+</h1>
-            <p>Monthly Visitors</p>
-          </div>
+        <div>
+          <TeamMember />
+          <Counter />
         </div>
         <div className="section3">
           <div className="box">
-            <h1>About Job Viewers</h1>
+            <h2>About Job Viewers</h2>
             <p>
               On this platform you can find the best employee of your choice,
               here you have to post your job.You can get your employee without
