@@ -1,0 +1,116 @@
+#packages {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 40px 20px;
+}
+#packages h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#packages .packagDetailMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#packages .packagDetail {
+  width: 27%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid var(--bg-primary);
+  margin: 5px 8px;
+}
+#packages .packagDetail .basic {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: var(--bg-primary);
+  border-radius: 6px 6px 0px 0px;
+}
+#packages .packagDetail .basic h6 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 3px;
+  padding: 0px 60px;
+}
+#packages .packagDetail .price {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#packages .packagDetail .price h1 {
+  color: red;
+  font-weight: bold;
+}
+#packages .packagDetail .price h4 {
+  color: var(--bg-primary);
+}
+#packages .packagDetail .detailPkg {
+  padding: 10px;
+}
+#packages .packagDetail .detailPkg .tick {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+#packages .packagDetail .detailPkg .tick p {
+  margin-bottom: 0%;
+  font-size: 14px;
+  color: grey;
+  margin-left: 5px;
+}
+#packages .packagDetail .detailPkg .tick .tickIcon {
+  background-color: var(--bg-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+}
+#packages .packagDetail .chat {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#packages .packagDetail .chat button {
+  outline: none;
+  border: none;
+  background: var(--bg-primary);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+#packages .packagDetail .call {
+  width: 100%;
+  background-color: var(--bg-primary);
+  color: white;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  padding: 6px;
+  border-radius: 0px 0px 6px 6px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  #packages .packagDetail {
+    width: 32%;
+    margin: 8px 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #packages .packagDetailMain {
+    display: flex;
+    flex-direction: column;
+  }
+  #packages .packagDetail {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #packages .packagDetail {
+    width: 100%;
+    margin: 8px 0px;
+  }
+}

@@ -28,8 +28,9 @@
 
 #clientSays .testi .swiper-slide {
   border-radius: 7px;
-  padding: 50px 30px;
+  padding: 30px;
   border: 2px solid var(--bg-primary);
+  height: 330px;
 }
 
 #clientSays .testi .swiper-slide:hover {
@@ -79,5 +80,8 @@
 @media screen and (max-width: 600px) {
   #clientSays {
     padding: 30px 10px 30px 10px;
+  }
+  #clientSays .testi .swiper-slide {
+    height: auto;
   }
 }

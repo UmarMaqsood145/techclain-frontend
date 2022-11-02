@@ -1,0 +1,135 @@
+#portfolio-work {
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio-work h1 {
+  color: black;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+#portfolio-work h1 span {
+  color: var(--bg-primary);
+}
+
+#portfolio-work .filterButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#portfolio-work .filterButtons button {
+  margin: 10px;
+  outline: none;
+  border: none;
+  background: var(--bg-primary);
+  padding: 10px 0px;
+  width: 200px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.5s all ease;
+}
+
+#portfolio-work .filterButtons button:hover {
+  background: var(--bg-yellow);
+  color: black;
+}
+
+#portfolio-work .container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#portfolio-work .container .cards {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+#portfolio-work .container .cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+#portfolio-work .container .cap-box {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: 0.5s all ease;
+}
+
+#portfolio-work .container .cap-box .cap-inner {
+  position: relative;
+  display: block;
+  padding: 25px 35px;
+  background: var(--bg-primary);
+  border-radius: 7px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+#portfolio-work .container .cap-box .cap-inner:hover {
+  color: black;
+  background: var(--bg-yellow);
+}
+
+#portfolio-work .container .cards:hover .cap-box {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#portfolio-work .btnBox button {
+  margin: 10px;
+  outline: none;
+  border: none;
+  background: var(--bg-primary);
+  padding: 10px 0px;
+  width: 200px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.5s all ease;
+}
+
+#portfolio-work .btnBox button:hover {
+  background: var(--bg-yellow);
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio {
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+  }
+
+  .overlay {
+    height: 400px;
+  }
+
+  #portfolio-work {
+    padding: 30px 10px 30px 10px;
+  }
+
+  #portfolio-work .filterButtons button {
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+  }
+}
