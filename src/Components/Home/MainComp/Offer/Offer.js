@@ -1,6 +1,8 @@
 import React from "react";
 import "./Offer.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { NavLink } from "react-router-dom";
+
 function Offer() {
   return (
     <>
@@ -9,7 +11,7 @@ function Offer() {
         <div className="off">30% OFF</div>
         <h5>Avail Discount Today</h5>
         <div className="price">
-          <button>See Offers</button>
+          <NavLink to="/packages">See Offers</NavLink>
         </div>
         <div className="mt-4 px-3">
           <div className="d-flex justify-content-between">

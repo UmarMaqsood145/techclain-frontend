@@ -32,6 +32,20 @@
   color: black;
 }
 
+#nav .nav-items .orderBtn {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--bg-primary);
+  animation: animate123 1.5s infinite linear;
+}
+
+@keyframes animate123 {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
 #nav .nav-items .active {
   color: var(--bg-primary) !important;
 }

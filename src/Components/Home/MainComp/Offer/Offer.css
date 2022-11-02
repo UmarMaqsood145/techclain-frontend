@@ -31,9 +31,9 @@
   display: flex;
   justify-content: center;
 }
-#offer .price button {
-  outline: none;
-  border: none;
+#offer .price a {
+  text-decoration: none;
+  text-align: center;
   width: 60%;
   padding: 7px 0px;
   border-radius: 30px;
@@ -43,7 +43,7 @@
   color: white;
   transition: 0.5s;
 }
-#offer .price button:hover {
+#offer .price a:hover {
   background-color: var(--bg-yellow);
   color: black;
 }
@@ -84,5 +84,6 @@
   #offer {
     width: 80%;
     margin: 20px 0px;
+    z-index: 0;
   }
 }

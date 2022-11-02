@@ -25,12 +25,12 @@
 #orderNow .inputsBox .inputField {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 #orderNow .inputsBox .inputField .same {
-  margin: 5px 10px;
+  margin: 5px 10px 5px 0px;
 }
 
 .cc {
@@ -68,7 +68,7 @@
 #orderNow .inputsBox .inputField textarea {
   box-shadow: none;
   height: 100px;
-  width: 980px;
+  width: 970px;
   color: var(--bg-primary);
 }
 
@@ -81,7 +81,6 @@
 }
 
 #orderNow .inputsBox .submitBtn {
-  margin-left: 30px;
   margin-top: 20px;
   width: 200px;
   height: 50px;
@@ -111,14 +110,14 @@
     justify-content: center;
   }
 
+  #orderNow .inputsBox .inputField {
+    justify-content: center;
+  }
+
   #orderNow .inputsBox .inputField textarea {
     box-shadow: none;
     height: 100px;
     width: 480px;
-  }
-
-  #orderNow .inputsBox .submitBtn {
-    margin-left: 0px;
   }
 }
 

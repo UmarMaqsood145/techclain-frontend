@@ -6,6 +6,7 @@ import OurClients from "./OurClients/OurClients";
 import CompanyServices from "./CompanyServices/CompanyServices";
 import AboutSection3 from "./AboutSection3/AboutSection3";
 import Packages from "../Pages/Packages/Packages";
+import Portfolio from "../Pages/Portfolio/Portfolio";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <AboutSection3 />
       <ClientSays />
       <OurClients />
+      <Portfolio />
     </div>
   );
 }
