@@ -6,12 +6,15 @@ function Packages() {
   return (
     <>
       <div id="packages">
-        <h1>Affordable Packages As Per Your Needs.</h1>
+        <h1>
+          Affordable <span>Packages</span> As Per Your Needs.
+        </h1>
         <div className="packagDetailMain">
           {packagesDetail.map((data) => (
             <div className="packagDetail">
               <div className="basic">
                 <h6>{data.title}</h6>
+                <h6>Packages</h6>
               </div>
               <div className="price">
                 <h4>PKR</h4>
