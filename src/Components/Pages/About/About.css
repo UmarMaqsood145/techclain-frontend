@@ -6,6 +6,7 @@
 #about .section1 {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 #about .section1 .box {
@@ -17,39 +18,14 @@
   width: 100%;
 }
 
-#about .section1 .box h1 {
+#about .section1 .box h2 {
   font-weight: bold;
   color: var(--bg-primary);
 }
 
 #about .section1 .box p {
-  font-size: 18px;
+  font-size: 16px;
 }
-
-#about .section2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
-}
-
-#about .section2 .cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .section2 h1 {
-  color: var(--bg-primary);
-  font-weight: bolder;
-}
-
-#about .section2 p {
-  letter-spacing: 1px;
-  text-align: center;
-}
-
 #about .section3 {
   display: flex;
   justify-content: center;
@@ -65,13 +41,13 @@
   width: 100%;
 }
 
-#about .section3 .box h1 {
+#about .section3 .box h2 {
   font-weight: bold;
   color: var(--bg-primary);
 }
 
 #about .section3 .box p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -104,7 +80,7 @@
     width: 100%;
   }
 
-  #about .section3 .box h1 {
+  #about .section3 .box h2 {
     margin-top: 20px;
   }
 }

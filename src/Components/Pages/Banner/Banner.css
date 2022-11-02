@@ -2,7 +2,7 @@
   width: 95%;
   height: 250px;
   background: var(--bg-primary);
-  background: linear-gradient(to left, #5d64df, #090f8d);
+  background: linear-gradient(to left, #090f8d, #5d64df);
   margin: auto;
   border-radius: 10px;
   margin-top: 30px;
@@ -20,21 +20,24 @@
   color: var(--bg-yellow);
   font-weight: bold;
 }
-#banner .bannerColor p {
-  color: white;
-  margin-bottom: 0%;
-}
+
 #banner .bannerColor a {
-  text-decoration: none;
+  border: none;
+  width: 200px;
+  height: 70px;
+  background: #5d64df;
   color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+  font-weight: bold;
 }
 #banner .bannerColor a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-#banner .bannerColor img {
-  width: 150px;
-  height: 140px;
+  background: var(--bg-yellow);
+  color: black;
 }
 @media screen and (max-width: 600px) {
   #banner {
@@ -49,20 +52,11 @@
   }
   #banner .bannerColor h1 {
     text-align: center;
-    margin-bottom: 0%;
-    font-size: 18px;
-  }
-  #banner .bannerColor p {
-    text-align: center;
-    font-size: 15px;
+    font-size: 22px;
   }
   #banner .bannerColor a {
-    display: flex;
-    justify-content: center;
-  }
-  #banner .bannerColor img {
     margin-top: 10px;
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 60px;
   }
 }

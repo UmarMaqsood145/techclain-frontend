@@ -2,10 +2,9 @@ import React from "react";
 import "./Footer.css";
 import logo from "../assets/logo.ico";
 import { MdLocationOn, MdEmail, MdOutlinePrivacyTip } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
-import { AiTwotoneMedicineBox } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaLaptopCode } from "react-icons/fa";
 import {
   BsFacebook,
   BsLinkedin,
@@ -13,7 +12,6 @@ import {
   BsPinterest,
 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
-import { BiFileFind } from "react-icons/bi";
 import { RiUserSearchLine } from "react-icons/ri";
 import { AiOutlineFileText, AiOutlineContacts } from "react-icons/ai";
 
@@ -116,20 +114,16 @@ function Footer() {
           <h2>LINKS</h2>
           <div className="mt-4">
             <li>
-              <BiFileFind className="icon" />
-              <NavLink to="/">Find Jobs</NavLink>
+              <AiOutlineHome className="icon" />
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
               <RiUserSearchLine className="icon" />
-              <NavLink to="/job-seeker">Job Seekers</NavLink>
+              <NavLink to="/packages">Packages</NavLink>
             </li>
             <li>
-              <AiTwotoneMedicineBox className="icon" />
-              <NavLink to="/post-job">Post a job</NavLink>
-            </li>
-            <li>
-              <CgProfile className="icon" />
-              <NavLink to="/post-profile">Post Profile</NavLink>
+              <FaLaptopCode className="icon" />
+              <NavLink to="/portfolio">Portfolio</NavLink>
             </li>
             <li>
               <AiOutlineFileText className="icon" />

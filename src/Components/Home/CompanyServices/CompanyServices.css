@@ -1,0 +1,56 @@
+#heapwareSec {
+  width: 100%;
+  height: auto;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#heapwareSec .box {
+  width: 60%;
+}
+
+#heapwareSec .box h1 {
+  color: black;
+}
+
+#heapwareSec .box h1 span {
+  color: var(--bg-primary);
+  font-weight: bold;
+}
+
+#heapwareSec .box a {
+  border: none;
+  background: #5d64df;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+#heapwareSec .box a:hover {
+  background-color: var(--bg-yellow);
+  color: black;
+}
+
+#heapwareSec img {
+  width: 40%;
+}
+
+@media screen and (max-width: 769px) {
+  #heapwareSec {
+    padding: 30px 10px;
+    flex-direction: column;
+  }
+
+  #heapwareSec .box {
+    width: 100%;
+  }
+  #heapwareSec img {
+    width: 98%;
+    margin-top: 30px;
+  }
+}
