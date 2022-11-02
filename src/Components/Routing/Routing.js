@@ -10,6 +10,7 @@ import Footer from "../Footer/Footer";
 import Portfolio from "../Pages/Portfolio/Portfolio";
 import OrderNow from "../Pages/OrderNow/OrderNow";
 import ScrollToTop from "./ScrollToTop";
+import Packages from "../Pages/Packages/Packages";
 
 function Routing() {
   return (
@@ -23,6 +24,7 @@ function Routing() {
           <Route path="*" element={<ErrorPage />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/order-now" element={<OrderNow />} />
+          <Route path="/packages" element={<Packages />} />
         </Routes>
         <Banner />
         <Footer />
