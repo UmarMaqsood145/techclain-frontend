@@ -17,7 +17,7 @@ function Packages() {
                 <h6>Packages</h6>
               </div>
               <div className="price">
-                <h4>PKR</h4>
+                <h4>$</h4>
                 <h1>{data.price}</h1>
               </div>
               <div className="detailPkg">
@@ -45,12 +45,18 @@ function Packages() {
                   <BsCheck className="tickIcon" />
                   <p>{data.p6}</p>
                 </div>
+                <div className="tick">
+                  <BsCheck className="tickIcon" />
+                  <p>{data.p7}</p>
+                </div>
               </div>
               <div className="chat">
                 <button>Live Chat</button>
-                <button>Get a Quote</button>
+                <a href="#">Order Now</a>
               </div>
-              <div className="call">Call Us: +92 303 3230379</div>
+              <div className="call">
+                <a href="#">Call Us: +92 303 3230379</a>
+              </div>
             </div>
           ))}
         </div>

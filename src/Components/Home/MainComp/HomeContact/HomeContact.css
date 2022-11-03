@@ -18,11 +18,16 @@
   height: auto;
   padding: 20px 0px;
 }
+#homeContact .form-error {
+  color: yellow;
+  margin-bottom: 0px;
+  font-size: 13px;
+}
 #homeContact .contactDetail input {
   width: 100%;
   outline: none;
   padding: 7px 5px;
-  margin: 3px 0px;
+  margin: 10px 0px 0px 0px;
   border-radius: 5px;
   border: 1px solid white;
   background: transparent;
@@ -48,11 +53,14 @@
   padding: 10px 0px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: var(--bg-yellow);
   color: black;
   font-weight: bold;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #homeContact .contactDetail button:hover {
   transform: translateY(-3px);

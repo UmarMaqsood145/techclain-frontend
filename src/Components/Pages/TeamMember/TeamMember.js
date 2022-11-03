@@ -1,6 +1,9 @@
 import React from "react";
 import "./TeamMember.css";
 import qaisar from "../../assets/QaisarRaza.jpg";
+import umar from "../../assets/umar.jpg";
+import arsalan from "../../assets/araslan.jpg";
+import friend from "../../assets/friend.jpg";
 import { AiFillInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 function TeamMember() {
@@ -16,8 +19,8 @@ function TeamMember() {
             <h5>Qaisar Raza</h5>
             <h6> Website Developer</h6>
             <p>
-              Web design encompasses many different skills and disciplines in
-              maintenance of websites
+              We are professional website developer and planner who is
+              responsible for the design and construction of websites.
             </p>
             <div className="infoIcon">
               <BsFacebook className="memberIcon" />
@@ -27,12 +30,12 @@ function TeamMember() {
           </div>
 
           <div className="teamCard">
-            <img src={qaisar} alt="" />
-            <h5>Qaisar Raza</h5>
+            <img src={umar} alt="" />
+            <h5>Umar Maqsood</h5>
             <h6> Website Developer</h6>
             <p>
-              Web design encompasses many different skills and disciplines in
-              maintenance of websites
+              Website developer responsible for planning and developing software
+              solutions and web applications, supporting .
             </p>
             <div className="infoIcon">
               <BsFacebook className="memberIcon" />
@@ -42,12 +45,13 @@ function TeamMember() {
           </div>
 
           <div className="teamCard">
-            <img src={qaisar} alt="" />
-            <h5>Qaisar Raza</h5>
-            <h6> Website Developer</h6>
+            <img src={arsalan} alt="" />
+            <h5>Muhammad Arsalan</h5>
+            <h6> Amazon Expert</h6>
             <p>
-              Web design encompasses many different skills and disciplines in
-              maintenance of websites
+              Managing the Amazon store of clients and also implementing
+              strategies in order to make the accounts grow products that will
+              continue to sell.
             </p>
             <div className="infoIcon">
               <BsFacebook className="memberIcon" />
@@ -57,12 +61,12 @@ function TeamMember() {
           </div>
 
           <div className="teamCard">
-            <img src={qaisar} alt="" />
-            <h5>Qaisar Raza</h5>
-            <h6> Website Developer</h6>
+            <img src={friend} alt="" />
+            <h5>Muhammad Babar</h5>
+            <h6>eBay Expert(CEO)</h6>
             <p>
-              Web design encompasses many different skills and disciplines in
-              maintenance of websites
+              eBay services such as product titles and description, data entry,
+              bulk product upload, category management etc.
             </p>
             <div className="infoIcon">
               <BsFacebook className="memberIcon" />
