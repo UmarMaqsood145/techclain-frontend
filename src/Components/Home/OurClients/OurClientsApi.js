@@ -1,53 +1,38 @@
 import client1 from "../../assets/clients/client1.png";
 import client2 from "../../assets/clients/client2.png";
+import client3 from "../../assets/clients/client3.png";
 import client4 from "../../assets/clients/client4.png";
 import client5 from "../../assets/clients/client5.png";
 import client6 from "../../assets/clients/client6.png";
-import client7 from "../../assets/clients/client7.jpg";
-import client8 from "../../assets/clients/client8.png";
-import client10 from "../../assets/clients/client10.png";
-import client11 from "../../assets/clients/client11.png";
-import client12 from "../../assets/clients/client12.png";
+import client7 from "../../assets/clients/client7.png";
 
 export const OurClientsApi = [
   {
-    pic: client10,
-    name: "Bharmar eCommerce Store",
-  },
-  {
-    pic: client11,
-    name: "Inrealtor.pk",
-  },
-  {
-    pic: client12,
-    name: "Panthar Dispatch Services",
-  },
-  {
     pic: client1,
-    name: "Clear Sight Health",
+    name: "Bharmar",
   },
   {
     pic: client2,
-    name: "Drexel University",
+    name: "Inrealtor",
+  },
+  {
+    pic: client3,
+    name: "Panthar Dispatch",
   },
   {
     pic: client4,
-    name: "ABC Services of Maryland",
+    name: "Resturant Website",
   },
   {
     pic: client5,
-    name: "Blue Streak Math",
+    name: "JobsViewers",
   },
   {
     pic: client6,
-    name: "Klang Kuppler",
+    name: "Ik Smart Shop",
   },
   {
     pic: client7,
-    name: "Terra Virgo Corporate",
-  },
-  {
-    pic: client8,
-    name: "BlindTune",
+    name: "Thinko Digital",
   },
 ];
