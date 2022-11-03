@@ -2,6 +2,8 @@ import React from "react";
 import "./Packages.css";
 import { BsCheck } from "react-icons/bs";
 import { packagesDetail } from "../../Pages/Packages/PackagesApi";
+import { NavLink } from "react-router-dom";
+
 function Packages() {
   return (
     <>
@@ -14,7 +16,7 @@ function Packages() {
             <div className="packagDetail">
               <div className="basic">
                 <h6>{data.title}</h6>
-                <h6>Packages</h6>
+                <h6>Package</h6>
               </div>
               <div className="price">
                 <h4>$</h4>
@@ -52,10 +54,12 @@ function Packages() {
               </div>
               <div className="chat">
                 <button>Live Chat</button>
-                <a href="#">Order Now</a>
+                <NavLink to="order-now">Order Now</NavLink>
               </div>
               <div className="call">
-                <a href="#">Call Us: +92 303 3230379</a>
+                <a href="tel: +923033230379" target="_blank" rel="noreferrer">
+                  Call Us: +923033230379
+                </a>
               </div>
             </div>
           ))}
