@@ -422,9 +422,30 @@ function OrderNow() {
               onBlur={handleBlur}
             >
               <option>Open this to select package</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="Website Basic Package ($40)">
+                Website Basic Package ($40)
+              </option>
+              <option value="Website Basic Package ($40)">
+                Website Basic Package ($30)
+              </option>
+              <option value="Website Basic Package ($40)">
+                Website Basic Package ($25)
+              </option>
+              <option value="Website Basic Package ($40)">
+                Website Basic Package ($20)
+              </option>
+              <option value="Website Basic Package ($40)">
+                Website Basic Package ($15)
+              </option>
+              <option value="Website Basic Package ($40)">
+                Website Basic Package ($10)
+              </option>
+              <option value="Website Basic Package ($40)">
+                Amazon Dropshipping Package ($05)
+              </option>
+              <option value="Website Basic Package ($40)">
+                Amazon VA Package ($200)
+              </option>
             </Form.Select>
             {errors.orderPackage && touched.orderPackage ? (
               <p className="form-error">{errors.orderPackage}</p>
