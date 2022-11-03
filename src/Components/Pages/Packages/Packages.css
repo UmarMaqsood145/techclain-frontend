@@ -23,13 +23,42 @@
   border-radius: 10px;
   border: 1px solid var(--bg-primary);
   margin: 5px 8px;
+  transition: 0.5s;
 }
+#packages .packagDetail:hover {
+  border-color: #d1001d;
+}
+#packages .packagDetail:hover .basic {
+  background: #d1001d;
+}
+
+#packages .packagDetail:hover .call {
+  background: #d1001d;
+}
+
+#packages .packagDetail:hover .tickIcon {
+  background: #d1001d !important;
+}
+
+#packages .packagDetail:hover button {
+  background: #d1001d !important;
+}
+
+#packages .packagDetail:hover .cell a {
+  background: #d1001d !important;
+}
+
+#packages .packagDetail:hover .chat a {
+  background: #d1001d !important;
+}
+
 #packages .packagDetail .basic {
   width: 100%;
   height: auto;
   padding: 10px 3px;
   background-color: var(--bg-primary);
   border-radius: 6px 6px 0px 0px;
+  transition: 0.5s;
 }
 #packages .packagDetail .basic h6 {
   text-align: center;
@@ -43,7 +72,7 @@
   margin-top: 20px;
 }
 #packages .packagDetail .price h1 {
-  color: red;
+  color: #d1001d;
   font-weight: bold;
   margin-bottom: 0%;
 }
@@ -69,6 +98,7 @@
   color: white;
   border-radius: 50%;
   font-size: 12px;
+  transition: 0.5s;
 }
 #packages .packagDetail .chat {
   padding: 0px 10px;
@@ -85,6 +115,10 @@
   color: white;
   font-weight: bold;
   font-size: 12px;
+  transition: 0.5s;
+}
+#packages .packagDetail .chat button:hover {
+  transform: translateY(-3px);
 }
 #packages .packagDetail .chat a {
   background: var(--bg-primary);
@@ -94,6 +128,10 @@
   font-weight: bold;
   font-size: 12px;
   text-decoration: none;
+  transition: 0.5s;
+}
+#packages .packagDetail .chat a:hover {
+  transform: translateY(-3px);
 }
 #packages .packagDetail .call {
   width: 100%;
@@ -103,10 +141,15 @@
   padding: 6px;
   border-radius: 0px 0px 6px 6px;
   font-weight: bold;
+  transition: 0.5s;
 }
 #packages .packagDetail .call a {
   text-decoration: none;
   color: white;
+  transition: 0.5s;
+}
+#packages .packagDetail .call a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 1024px) {
   #packages .packagDetail {
