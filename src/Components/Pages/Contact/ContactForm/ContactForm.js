@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactForm.css";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
@@ -8,7 +8,6 @@ import { toast } from "react-toastify";
 import Loading from "../../../../Loading/Loading";
 import axios from "axios";
 import { useFormik } from "formik";
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -26,7 +25,7 @@ function ContactForm() {
     onSubmit: (values, action) => {
       setLoading(true);
       axios
-        .post("", values)
+        .post("http://localhost:5000/contact-us", values)
         .then((res) => {
           toast.success("Your message has been successfully sent!");
           setLoading(false);

@@ -80,7 +80,7 @@
   border-radius: 5px;
   width: 150px;
   height: 50px;
-  border: none;
+  border: 2px solid var(--bg-primary);
   outline: none;
   display: flex;
   justify-content: center;
@@ -89,8 +89,8 @@
 }
 
 #contactForm .left-box button:hover {
-  background: var(--bg-yellow);
-  color: black;
+  background: none;
+  color: var(--bg-primary);
 }
 
 #contactForm .form-error {

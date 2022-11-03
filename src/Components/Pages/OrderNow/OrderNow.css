@@ -85,7 +85,7 @@
   width: 200px;
   height: 50px;
   background: var(--bg-primary);
-  border: none;
+  border: 2px solid var(--bg-primary);
   outline: none;
   display: flex;
   justify-content: center;
@@ -93,9 +93,15 @@
   transition: 0.5s;
 }
 
+#orderNow .form-error {
+  color: red;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
 #orderNow .inputsBox .submitBtn:hover {
-  background: var(--bg-yellow);
-  color: black;
+  background: none;
+  color: var(--bg-primary);
 }
 
 @media screen and (max-width: 1330px) {
