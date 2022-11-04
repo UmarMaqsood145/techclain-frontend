@@ -23,7 +23,9 @@ footer .footerText {
 footer .f-box .inner-box h2 {
   color: white;
 }
-
+footer .f-box .inner-box p {
+  font-size: 14px;
+}
 footer .f-box .inner-box li {
   list-style: none;
   display: flex;

@@ -110,12 +110,13 @@ function ContactForm() {
           <div>
             <h3>CONTACT DETAILS</h3>
             <p>
-              In this website we are working on providing job if any one has any
-              concern regarding job then he can contact us we will find you a
-              good way by posting any kind of job in this website or you can
-              post your profile here you will find all kinds of jobs.You can
-              contact us on the number given below. Our goal is to help you find
-              a good job.
+              We are working in all over of world. We provide web development
+              and Amazon services. We have an expert team who makes your
+              business easy to get anywhere in the era of the E-commerce
+              industry.We also provides e-commerce website development services
+              for an online shopping store. If you want to develop a
+              well-designed and attractive website for your online business,
+              contact us to get our exceptional web development services.
             </p>
           </div>
           <div>
