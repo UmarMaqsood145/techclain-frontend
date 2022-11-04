@@ -54,7 +54,7 @@ function Packages() {
               </div>
               <div className="chat">
                 <button>Live Chat</button>
-                <NavLink to="order-now">Order Now</NavLink>
+                <NavLink to="/order-now">Order Now</NavLink>
               </div>
               <div className="call">
                 <a href="tel: +923033230379" target="_blank" rel="noreferrer">
