@@ -61,7 +61,8 @@
   color: white;
   margin: 5px;
   cursor: pointer;
+  transition: 0.5s;
 }
 #teamMember .teamCardMain .teamCard .infoIcon .memberIcon:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }

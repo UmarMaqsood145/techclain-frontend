@@ -60,12 +60,13 @@ function Navbar() {
           </li>
           <div className="navDetails">
             <p>
-              You can find any type of job on jobsviewers without any problem
-              sitting at home. You can also post your job on it. If you are
-              looking for a worker, then post the job with your information and
-              the workers will contact you automatically. This website is
-              related to job without any problem visit our website now without
-              any charges.
+              Our web development services in Pakistan gives wings to your
+              business. We have an expert team who makes your business easy to
+              get anywhere in the era of the E-commerce industry.We also
+              provides e-commerce website development services for an online
+              shopping store. If you want to develop a well-designed and
+              attractive website for your online business, contact us to get our
+              exceptional web development services.
             </p>
             <div className="mt-2">
               <a href="mailTo: info@gmail.com" target="_blank" rel="noreferrer">
