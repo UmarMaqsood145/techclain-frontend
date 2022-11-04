@@ -40,14 +40,14 @@ footer .f-box .inner-box li .icon {
 
 footer .f-box .inner-box li a {
   text-decoration: none;
-  color: var(--bg-text);
+  color: rgb(226, 226, 226);
   margin-left: 10px;
   transition: 0.3s;
 }
 
 footer .f-box .inner-box li a:hover {
-  color: white;
-  transform: translateX(5px);
+  color: var(--bg-primary);
+  text-decoration: underline;
 }
 
 footer .f-box .logo img {
@@ -66,7 +66,7 @@ footer .social-icons a {
 
 footer .social-icons .fa {
   font-size: 35px;
-  background: rgb(209, 0, 29);
+  background: var(--bg-primary);
   color: white;
   margin: 10px 15px 5px 0px;
   padding: 10px;
@@ -88,7 +88,7 @@ footer .line {
 }
 
 footer p {
-  color: var(--bg-text);
+  color: rgb(226, 226, 226);
 }
 
 footer .lastBox {

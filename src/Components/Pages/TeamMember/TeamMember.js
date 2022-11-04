@@ -63,7 +63,7 @@ function TeamMember() {
           <div className="teamCard">
             <img src={friend} alt="" />
             <h5>Muhammad Babar</h5>
-            <h6>eBay Expert(CEO)</h6>
+            <h6>eBay Expert</h6>
             <p>
               eBay services such as product titles and description, data entry,
               bulk product upload, category management etc.

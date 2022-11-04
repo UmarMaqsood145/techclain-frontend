@@ -16,12 +16,12 @@ function CompanyServices() {
             with our software our software Development Agency
           </p>
           <p className="mb-4">
-            Heapware is a leading software Development Agency in los Angles.we
-            believe that the future is digital.Therefore the refusal to embrace
-            new technology on a personal or corporate level can stop the
-            progress of companies.Heapware help established businesses and
-            startup in designing website,developing software that brings their
-            ideas to life and fulfills their needs
+            CompanyName is a leading software Development Agency in los
+            Angles.we believe that the future is digital.Therefore the refusal
+            to embrace new technology on a personal or corporate level can stop
+            the progress of companies. CompanyName help established businesses
+            and startup in designing website,developing software that brings
+            their ideas to life and fulfills their needs
           </p>
           <NavLink to="/about">Know more about us</NavLink>
         </div>
