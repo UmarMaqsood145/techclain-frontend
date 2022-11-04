@@ -134,28 +134,28 @@ function ContactForm() {
               </li>
               <li>
                 <IoIosCall className="icon" />
-                <a href="tel: +923401254367" target="_blank" rel="noreferrer">
-                  +923401254367
+                <a href="tel: +923033230379" target="_blank" rel="noreferrer">
+                  +923033230379
                 </a>
               </li>
               <li>
                 <FaWhatsapp className="icon" />
                 <a
-                  href="https://wa.me/923401254367"
+                  href="https://wa.me/923033230379"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +923401254367
+                  +923033230379
                 </a>
               </li>
               <li>
                 <MdEmail className="icon" />
                 <a
-                  href="mailTo: jobsviewers@gmail.com"
+                  href="mailTo: info@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  jobsviewers@gmail.com
+                  info@gmail.com
                 </a>
               </li>
             </div>

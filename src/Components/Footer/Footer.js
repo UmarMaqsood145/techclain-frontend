@@ -48,28 +48,24 @@ function Footer() {
             </li>
             <li>
               <IoIosCall className="icon" />
-              <a href="tel: +923401254367" target="_blank" rel="noreferrer">
-                +923401254367
+              <a href="tel: +923033230379" target="_blank" rel="noreferrer">
+                +923033230379
               </a>
             </li>
             <li>
               <FaWhatsapp className="icon" />
               <a
-                href="https://wa.me/923401254367"
+                href="https://wa.me/923033230379"
                 target="_blank"
                 rel="noreferrer"
               >
-                +923401254367
+                +923033230379
               </a>
             </li>
             <li>
               <MdEmail className="icon" />
-              <a
-                href="mailTo: jobsviewers@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                jobsviewers@gmail.com
+              <a href="mailTo: info@gmail.com" target="_blank" rel="noreferrer">
+                info@gmail.com
               </a>
             </li>
           </div>
@@ -103,7 +99,7 @@ function Footer() {
               <BsPinterest className="fa" />
             </a>
             <a
-              href="https://wa.me/923401254367"
+              href="https://wa.me/923033230379"
               target="_blank"
               rel="noreferrer"
             >
@@ -144,7 +140,7 @@ function Footer() {
       <div className="line"></div>
       <div className="lastBox">
         <p>
-          © 2022 <NavLink to="/">JOBS VIEWERS</NavLink>. All Rights Reserved.
+          © 2022 <NavLink to="/">Company Name</NavLink>. All Rights Reserved.
         </p>
         <p className="f">
           Designed and Developed by{" "}

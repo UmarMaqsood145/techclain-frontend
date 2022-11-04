@@ -75,17 +75,17 @@ function Navbar() {
             </div>
             <div className="mt-2">
               <a
-                href="https://wa.me/923001234567"
+                href="https://wa.me/923033230379"
                 target="_blank"
                 rel="noreferrer"
               >
-                +923001234567
+                +923033230379
               </a>
             </div>
           </div>
         </div>
         <a
-          href="https://wa.me/923001234567"
+          href="https://wa.me/923033230379"
           target="_blank"
           rel="noreferrer"
           className="contactBtn"
@@ -93,7 +93,7 @@ function Navbar() {
           <RiWhatsappFill className="icon" />
           <div className="ms-2">
             <span>CONNECT WITH US</span>
-            <p>+923001234567</p>
+            <p>+923033230379</p>
           </div>
         </a>
       </div>
