@@ -26,11 +26,11 @@ function Footer() {
           <p className="footerText mt-2">
             Our web development services in Pakistan gives wings to your
             business. We have an expert team who makes your business easy to get
-            anywhere in the era of the E-commerce industry.We also provides
-            e-commerce website development services for an online shopping
-            store. If you want to develop a well-designed and attractive website
-            for your online business, contact us to get our exceptional web
-            development services.
+            anywhere of the E-commerce industry.We also provides e-commerce
+            website development services for an online shopping store. If you
+            want to develop a well-designed and attractive website for your
+            online business, contact us to get our exceptional web development
+            services.
           </p>
         </div>
         <div className="inner-box">
