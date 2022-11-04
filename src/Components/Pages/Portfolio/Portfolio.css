@@ -61,7 +61,6 @@
 #portfolio-work .container .cards img {
   width: 100%;
   height: auto;
-  border-radius: 7px;
 }
 
 #portfolio-work .container .cap-box {
@@ -94,6 +93,10 @@
 #portfolio-work .container .cards:hover .cap-box {
   opacity: 1;
   transform: translateY(0px);
+}
+
+#portfolio-work .btnBox {
+  margin-top: 30px;
 }
 
 #portfolio-work .btnBox button {
