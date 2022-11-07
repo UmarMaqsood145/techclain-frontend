@@ -2,11 +2,13 @@ import React from "react";
 import "./Offer.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { NavLink } from "react-router-dom";
-
+import Aos from "aos";
 function Offer() {
+  Aos.init();
+  Aos.refresh();
   return (
     <>
-      <div id="offer">
+      <div id="offer" data-aos="fade-left">
         <h4>EXCLUSIVE OFFER</h4>
         <div className="off">30% OFF</div>
         <h5>Avail Discount Today</h5>

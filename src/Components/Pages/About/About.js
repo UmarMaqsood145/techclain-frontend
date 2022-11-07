@@ -5,7 +5,10 @@ import image2 from "../../assets/image4.jpeg";
 import Counter from "../Counter/Counter";
 import { Helmet } from "react-helmet";
 import TeamMember from "../TeamMember/TeamMember";
+import Aos from "aos";
 function About() {
+  Aos.init();
+  Aos.refresh();
   return (
     <>
       <Helmet>
@@ -23,10 +26,10 @@ function About() {
       </Helmet>
       <div id="about">
         <div className="section1">
-          <div className="box">
+          <div className="box" data-aos="fade-right">
             <img src={image1} alt="" />
           </div>
-          <div className="box">
+          <div className="box" data-aos="fade-left">
             <h2>About Company</h2>
             <p>
               Grow your business digitally under the umbrella of company and
@@ -50,7 +53,7 @@ function About() {
           <Counter />
         </div>
         <div className="section3">
-          <div className="box">
+          <div className="box" data-aos="fade-right">
             <h2>About Company</h2>
             <p>
               Moreover, in addition to being one of the leading hosting
@@ -68,7 +71,7 @@ function About() {
               is optimized for conversions.
             </p>
           </div>
-          <div className="box">
+          <div className="box" data-aos="fade-left">
             <img src={image2} alt="" />
           </div>
         </div>

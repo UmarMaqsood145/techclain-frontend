@@ -6,14 +6,17 @@ import arsalan from "../../assets/araslan.jpg";
 import friend from "../../assets/friend.jpg";
 import { AiFillInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import Aos from "aos";
 function TeamMember() {
+  Aos.init();
+  Aos.refresh();
   return (
     <>
       <div id="teamMember">
         <h2>
           MEET WITH OUR <span> TEAM</span>
         </h2>
-        <div className="teamCardMain">
+        <div className="teamCardMain" data-aos="fade-up">
           <div className="teamCard">
             <img src={qaisar} alt="" />
             <h5>Qaisar Raza</h5>

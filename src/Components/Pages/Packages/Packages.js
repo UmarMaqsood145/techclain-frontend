@@ -3,8 +3,10 @@ import "./Packages.css";
 import { BsCheck } from "react-icons/bs";
 import { packagesDetail } from "../../Pages/Packages/PackagesApi";
 import { NavLink } from "react-router-dom";
-
+import Aos from "aos";
 function Packages() {
+  Aos.init();
+  Aos.refresh();
   return (
     <>
       <div id="packages">
@@ -13,7 +15,7 @@ function Packages() {
         </h1>
         <div className="packagDetailMain">
           {packagesDetail.map((data) => (
-            <div className="packagDetail">
+            <div className="packagDetail" data-aos="zoom-in">
               <div className="basic">
                 <h6>{data.title}</h6>
                 <h6>Package</h6>
