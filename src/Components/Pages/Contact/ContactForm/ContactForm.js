@@ -12,12 +12,15 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import Aos from "aos";
 const initialValues = {
   name: "",
   email: "",
   message: "",
 };
 function ContactForm() {
+  Aos.init();
+  Aos.refresh();
   const [loading, setLoading] = useState(false);
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues,
@@ -44,7 +47,7 @@ function ContactForm() {
         WRITE US A <span>MESSAGE</span>
       </h1>
       <div className="formContainer">
-        <div className="left-box">
+        <div className="left-box" data-aos="fade-right">
           <Form noValidate onSubmit={handleSubmit}>
             <Form.Group as={Col} md="12" controlId="validationFormikUsername">
               <Form.Label>Name:</Form.Label>
@@ -106,7 +109,7 @@ function ContactForm() {
             </Button>
           </Form>
         </div>
-        <div className="right-box">
+        <div className="right-box" data-aos="fade-left">
           <div>
             <h3>CONTACT DETAILS</h3>
             <p>

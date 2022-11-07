@@ -2,8 +2,10 @@ import React from "react";
 import "./CompanyServices.css";
 import image from "../../assets/image3.png";
 import { NavLink } from "react-router-dom";
-
+import Aos from "aos";
 function CompanyServices() {
+  Aos.init();
+  Aos.refresh();
   return (
     <>
       <div id="heapwareSec">
@@ -16,16 +18,18 @@ function CompanyServices() {
             with our software our software Development Agency
           </p>
           <p className="mb-4">
-            CompanyName is a leading software Development Agency in los
+            Company Name is a leading software Development Agency in los
             Angles.we believe that the future is digital.Therefore the refusal
             to embrace new technology on a personal or corporate level can stop
             the progress of companies. CompanyName help established businesses
             and startup in designing website,developing software that brings
             their ideas to life and fulfills their needs
           </p>
-          <NavLink to="/about">Know more about us</NavLink>
+          <NavLink to="/about" data-aos="fade-right">
+            Know more about us
+          </NavLink>
         </div>
-        <img src={image} alt={image} />
+        <img src={image} alt={image} data-aos="fade-left" />
       </div>
     </>
   );

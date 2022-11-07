@@ -5,6 +5,7 @@ import "react-phone-input-2/lib/bootstrap.css";
 import { HomeFormSchema } from "./HomeContactSchema";
 import { toast } from "react-toastify";
 import Loading from "../../../../Loading/Loading";
+import Aos from "aos";
 import axios from "axios";
 import { useFormik } from "formik";
 const initialValues = {
@@ -15,6 +16,8 @@ const initialValues = {
 };
 
 function HomeContact() {
+  Aos.init();
+  Aos.refresh();
   const [loading, setLoading] = useState(false);
   const [phoneInput, setPhoneInput] = useState("");
   const {
@@ -52,13 +55,14 @@ function HomeContact() {
   };
   return (
     <>
-      <div id="homeContact">
+      <div id="homeContact" data-aos="fade-right">
         <h2>
           Do You Want An Identity that Stays in Your Customer’s Mind Forever?
         </h2>
         <p>Hire Our Web Developers allover the world!</p>
         <div className="contactDetail">
           <input
+            data-aos="fade-up"
             type="text"
             placeholder="Enter Your Name"
             name="cName"
@@ -70,6 +74,7 @@ function HomeContact() {
             <p className="form-error">{errors.cName}</p>
           ) : null}
           <input
+            data-aos="fade-up"
             type="text"
             placeholder="Enter Your Business Name"
             name="cBusiness"
@@ -81,6 +86,7 @@ function HomeContact() {
             <p className="form-error">{errors.cBusiness}</p>
           ) : null}
           <input
+            data-aos="fade-up"
             type="text"
             placeholder="Enter Your Email"
             name="cEmail"
@@ -92,6 +98,7 @@ function HomeContact() {
             <p className="form-error">{errors.cEmail}</p>
           ) : null}
           <PhoneInput
+            data-aos="fade-up"
             inputClass="ccc"
             value={phoneInput}
             onChange={handlePhone}

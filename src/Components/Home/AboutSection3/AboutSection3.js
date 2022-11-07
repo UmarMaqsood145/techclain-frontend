@@ -1,8 +1,10 @@
 import React from "react";
 import "./AboutSection3.css";
 import AboutSection3Api from "./AboutSectionApi";
-
+import Aos from "aos";
 function AboutSection3() {
+  Aos.init();
+  Aos.refresh();
   return (
     <div id="aboutSec3">
       <h1>
@@ -15,7 +17,7 @@ function AboutSection3() {
       <div className="cardsContainer">
         {AboutSection3Api.map((data) => {
           return (
-            <div className="cards">
+            <div className="cards" data-aos="zoom-in">
               <div class="line-1"></div>
               <div class="line-2"></div>
               <div class="line-3"></div>
