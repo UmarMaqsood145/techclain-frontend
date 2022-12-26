@@ -28,7 +28,7 @@ function ContactForm() {
     onSubmit: (values, action) => {
       setLoading(true);
       axios
-        .post("http://localhost:5000/contact-us", values)
+        .post("https://techclain-backend.vercel.app/contact-us", values)
         .then((res) => {
           toast.success("Your message has been successfully sent!");
           setLoading(false);

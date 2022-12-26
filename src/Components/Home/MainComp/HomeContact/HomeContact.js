@@ -34,7 +34,7 @@ function HomeContact({ clickBtn }) {
     onSubmit: (values, action) => {
       setLoading(true);
       axios
-        .post("http://localhost:5000/home-contact", values)
+        .post("https://techclain-backend.vercel.app/home-contact", values)
         .then((res) => {
           toast.success("Your message has been successfully sent!");
           setLoading(false);
