@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Home.css";
 import MainComp from "./MainComp/MainComp";
 import ClientSays from "./ClientSays/ClientSays";
@@ -9,11 +9,15 @@ import Packages from "../Pages/Packages/Packages";
 import Portfolio from "../Pages/Portfolio/Portfolio";
 
 function Home() {
+  const myRef = useRef(null);
+  const clickBtn = () => {
+    myRef.current.scrollIntoView();
+  };
   return (
     <div id="home">
-      <MainComp />
+      <MainComp clickBtn={clickBtn} />
       <CompanyServices />
-      <Packages />
+      <Packages myRef={myRef} />
       <AboutSection3 />
       <ClientSays />
       <OurClients />

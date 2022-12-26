@@ -15,7 +15,7 @@ const initialValues = {
   cPhone: "",
 };
 
-function HomeContact() {
+function HomeContact({ clickBtn }) {
   Aos.init();
   Aos.refresh();
   const [loading, setLoading] = useState(false);
@@ -107,7 +107,9 @@ function HomeContact() {
             {loading ? <Loading /> : <>Submit</>}
           </button>
         </div>
-        <button className="discount">Chat With Us to Get 30% Discount</button>
+        <button className="discount" onClick={clickBtn}>
+          Chat With Us to Get 30% Discount
+        </button>
       </div>
     </>
   );

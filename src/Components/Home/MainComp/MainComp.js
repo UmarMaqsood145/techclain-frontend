@@ -3,7 +3,7 @@ import HomeContact from "./HomeContact/HomeContact";
 import "./MainComp.css";
 import Offer from "./Offer/Offer";
 
-function MainComp() {
+function MainComp({ clickBtn }) {
   return (
     <div id="mainComp">
       <div class="area">
@@ -22,7 +22,7 @@ function MainComp() {
           <li></li>
         </ul>
         <div className="subComp">
-          <HomeContact />
+          <HomeContact clickBtn={clickBtn} />
           <Offer />
         </div>
       </div>

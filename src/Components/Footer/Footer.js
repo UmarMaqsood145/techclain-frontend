@@ -64,8 +64,12 @@ function Footer() {
             </li>
             <li>
               <MdEmail className="icon" />
-              <a href="mailTo: info@gmail.com" target="_blank" rel="noreferrer">
-                info@gmail.com
+              <a
+                href="mailTo: techclain145@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                techclain145@gmail.com
               </a>
             </li>
           </div>
@@ -140,7 +144,7 @@ function Footer() {
       <div className="line"></div>
       <div className="lastBox">
         <p>
-          © 2022 <NavLink to="/">Company Name</NavLink>. All Rights Reserved.
+          © 2022 <NavLink to="/">TechClain</NavLink>. All Rights Reserved.
         </p>
         <p className="f">
           Designed and Developed by{" "}
