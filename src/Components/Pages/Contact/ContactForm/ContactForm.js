@@ -114,8 +114,8 @@ function ContactForm() {
             <h3>CONTACT DETAILS</h3>
             <p>
               We are working in all over of world. We provide web development
-              and Amazon services. We have an expert team who makes your
-              business easy to get anywhere in the era of the E-commerce
+              and web development services. We have an expert team who makes
+              your business easy to get anywhere in the era of the E-commerce
               industry.We also provides e-commerce website development services
               for an online shopping store. If you want to develop a
               well-designed and attractive website for your online business,
@@ -154,11 +154,11 @@ function ContactForm() {
               <li>
                 <MdEmail className="icon" />
                 <a
-                  href="mailTo: info@gmail.com"
+                  href="mailTo: techclain145@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  info@gmail.com
+                  techclain145@gmail.com
                 </a>
               </li>
             </div>

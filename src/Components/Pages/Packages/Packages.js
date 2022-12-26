@@ -4,12 +4,12 @@ import { BsCheck } from "react-icons/bs";
 import { packagesDetail } from "../../Pages/Packages/PackagesApi";
 import { NavLink } from "react-router-dom";
 import Aos from "aos";
-function Packages() {
+function Packages({ myRef }) {
   Aos.init();
   Aos.refresh();
   return (
     <>
-      <div id="packages">
+      <div id="packages" ref={myRef}>
         <h1>
           Affordable <span>Packages</span> As Per Your Needs.
         </h1>

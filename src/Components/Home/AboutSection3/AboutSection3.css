@@ -30,34 +30,37 @@
 }
 
 #aboutSec3 .cardsContainer .cards {
-  background-color: white;
+  background-color: ghostwhite;
   width: 270px;
   height: 300px;
   position: relative;
   margin: 5px;
   overflow: hidden;
   box-shadow: 0px 2px 8px 0px rgb(99 99 99 / 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #aboutSec3 .cards h2 {
   color: gray;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   font-weight: bold;
 }
 
 #aboutSec3 .cards h4 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
   color: black;
 }
 
 #aboutSec3 .cards p {
-  text-align: start;
-  margin-top: 10px;
+  text-align: center;
   padding: 0px 10px;
   font-size: 15px;
-  color: black;
+  color: gray;
 }
 
 #aboutSec3 .cards .line-1 {
