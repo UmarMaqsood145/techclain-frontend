@@ -39,7 +39,7 @@ function OrderNow() {
     onSubmit: (values, action) => {
       setLoading(true);
       axios
-        .post("http://localhost:5000/order-now", values)
+        .post("https://techclain-backend.vercel.app/order-now", values)
         .then((res) => {
           toast.success("Your message has been successfully sent!");
           setLoading(false);
